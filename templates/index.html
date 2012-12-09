@@ -1,0 +1,181 @@
+<html>
+<head>
+    <title>Just Another Photo Mosaic Maker</title>
+	<link rel="stylesheet" href="../static/style.css" type="text/css" />
+</head>
+<body>
+
+    <div id='main'>
+		<div id='header'>
+			<div id='headerContentCont'>
+				<div id='logoContainer'>
+					<img id='logo' src='http://design.engnetglobal.com/files/portfolio/entries/downloads/house_of_mosaic_logo.jpg' />
+				</div>
+				<div id='homeButton' class='headerButton'>
+					HOME
+				</div>
+				<div id='aboutButton' class='headerButton'>
+					ABOUT
+				</div>
+				<div id='loginButton' class='headerButton'>
+					LOGIN
+				</div>
+			</div>
+		</div>
+	
+		<div id='contentWrapper'>
+			<div id='left-pane'>
+			
+				<div id='sideLinksCont'>
+					<div id='linkListCont'>
+						<ul id='linkList'>
+							<a href='#'><li>How it Works</li></a>
+							<a href='#'><li>Why it Works</li></a>
+							<a href='#'><li>What Detail do I need?</li></a>
+							<a href='#'><li>Some Other Stuff</li></a>
+							<a href='#'><li>And Another Thing</li></a>
+						</ul>
+					</div>
+				</div>
+				
+				<div id='sampleMosaicCont'>
+					<div class='sampleMosaicImgContCont'>
+						<div class='sampleMosaicImgCont'>
+							<a href='static/mosaics/JamesSquare Mosaic F1 HTML.html'><img class='sampleMosaicImg' src='{{sampleMosaicPics[0]}}' /></a>
+						</div>
+					</div>
+					
+					<div class='sampleMosaicImgContCont'>
+						<div class='sampleMosaicImgCont'>
+							<a href='static/mosaics/ManojWTF Mosaic F2 HTML.html'><img class='sampleMosaicImg' src='{{sampleMosaicPics[1]}}' /></a>
+						</div>
+					</div>
+					
+					<div class='sampleMosaicImgContCont'>
+						<div class='sampleMosaicImgCont'>
+							<a href='static/mosaics/MomDog Mosaic F3 P1 HTML.html'><img class='sampleMosaicImg' src='{{sampleMosaicPics[2]}}' /></a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div id='center_pane'>
+			
+				<!--<div class='imageContainer'>
+					<img class='main' src='{{bannerImage}}' />
+				</div>-->
+				
+				<div class='step_title'>
+					Step One: Upload an Image
+				</div>
+				
+				<div id='step_one' class='step'>
+				
+					<div id='upload_form_container'>
+						<form id='upload_form' action="" method=post enctype=multipart/form-data>
+							<span class='input_field_cont'><input class='input_field' type=file name=file></span>
+							<span class='upload_field_cont'><input class='upload_field' type=submit value=Upload></span>
+						</form>
+					</div>
+					
+					<div id='upload_results_cont'>
+						<div id='upload_results'>
+							<div id='upload_text'>
+								{{upload_message}} {{filename}}
+							</div>
+							<img id='uploaded_image' src="{{filesource}}" />
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class='step_title'>
+					Step Two: Create an Image Library
+				</div>
+				<div id='step_two' class='step'>
+					<div id = 'sampleSearches'>
+					
+						<div class='imgContCont'>
+							<div class = 'sampleSearchImgContainer'>
+								<img class = 'sampleSearchImg' src = '{{randomImages[0]}}' />
+							</div>
+						</div>
+						
+						<div class='imgContCont'>
+							<div class = 'sampleSearchImgContainer'>
+								<img class = 'sampleSearchImg' src = '{{randomImages[1]}}' />
+							</div>
+						</div>
+					
+						<div class='imgContCont'>
+							<div class = 'sampleSearchImgContainer'>
+								<img class = 'sampleSearchImg' src = '{{randomImages[2]}}' />
+							</div>
+						</div>
+							
+						<div class='imgContCont'>
+							<div class = 'sampleSearchImgContainer'>
+								<img class = 'sampleSearchImg' src = '{{randomImages[3]}}' />
+							</div>
+						</div>
+							
+						<div class='imgContCont'>
+							<div class = 'sampleSearchImgContainer'>
+								<img class = 'sampleSearchImg' src = '{{randomImages[4]}}' />
+							</div>
+						</div>
+							
+						<div class='imgContCont'>
+							<div class = 'sampleSearchImgContainer'>
+								<img class = 'sampleSearchImg' src = '{{randomImages[5]}}' />
+							</div>
+						</div>
+							
+						<div class='imgContCont'>
+							<div class = 'sampleSearchImgContainer'>
+								<img class = 'sampleSearchImg' src = '{{randomImages[6]}}' />
+							</div>
+						</div>
+						
+						<div class='imgContCont'>
+							<div class = 'sampleSearchImgContainer'>
+								<img class = 'sampleSearchImg' src = '{{randomImages[7]}}' />
+							</div>
+						</div>
+							
+						<div class='imgContCont'>
+							<div class = 'sampleSearchImgContainer'>
+								<img class = 'sampleSearchImg' src = '{{randomImages[8]}}' />
+							</div>
+						</div>
+						
+					</div>
+					
+					
+				</div>
+				
+				<div class='step_title'>
+					Step Three: Generate Mosaic and Fine Tune Results
+				</div>
+				
+				<div id='step_three' class='step'>
+		
+				</div>
+			
+			</div>
+			
+			<div id='right_pane'>
+				
+			</div>
+			
+		</div>
+		
+		<div id='hugeFooter'>
+			HUGE FOOTERS ARE ALL THE RAGE THIS SEASON
+		</div>
+		
+	</div>
+		
+</body>
+</html>

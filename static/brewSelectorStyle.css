@@ -1,0 +1,368 @@
+/*----------------------------
+---------Brew Selector--------
+----------------------------*/
+
+body {
+	background:url('http://www.lovetextures.com/wp-content/uploads/2009/09/textures-large-221.jpg');
+}
+
+/*This encases the entire widget*/
+#brewSelectorContainer {
+	/*Border*/
+	border: 2px solid black;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	/*Placement*/
+	margin: 0 auto;
+	/*Margin and Padding*/
+	margin-top:110px;
+	padding-top:30px;
+	padding-bottom:30px;
+	padding-right:0px;
+	padding-left:0px;
+	/*Size*/
+	width: 900px;
+	height: 370px;
+	/*Styling*/
+	background:#eee9e9;
+}
+
+#mainHeader {
+	/*Border*/
+	border:2px solid black;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	/*Placement*/
+	margin: 0 auto;
+	position:relative;
+	/*Margin and Padding*/
+	margin-bottom:4px;
+	/*Size*/
+	width:800px;
+	height:50px;
+	box-sizing:border-box;
+	/*Styling*/
+	background:#deb887;
+	text-shadow:1px 1px gray;
+	
+	background: #999; /* for non-css3 browsers */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */ 
+	
+}
+
+	#mainHeader h1 {
+		position:absolute;
+		top:-20px;
+		left:15px;
+		
+		font-family:serif;
+		font-style:italic;
+		font-weight:bold;
+		font-style:underline;
+		font-size:30px;
+		border-bottom:2px solid black;
+	}
+	
+		#mainHeader h1 span {
+			font-size:35px;
+		}
+
+.header {
+	/*Border*/
+	border:3px solid black;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	/*Placement*/
+	margin: 0 auto;
+	/*Margin and Padding*/
+	padding:0px;
+	margin-top:0px;
+	/*Size*/
+	width:800px;
+	height:30px;
+	box-sizing:border-box;
+	/*Styling*/	
+	background:white;
+	font-size:50%;/*This is used to control slider height*/
+}
+
+.headerSlider {
+	/*Border*/
+	/*Placement*/
+	position:relative;
+	float:right;
+	/*Margin and Padding*/
+	padding-top:0px;
+	margin-top:5px;
+	margin-right:40px;
+	/*Size*/
+	height:100%;
+	width:500px;
+	/*Styling*/	
+}
+
+.headerValue {
+	/*Border*/
+	border-left: 3px solid black;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border-bottom-left-radius:0px;
+	border-top-left-radius:0px;
+	/*Placement*/
+	position:relative;
+	float:right;
+	display: inline-block;
+	/*Margin and Padding*/
+	padding-top:0px;
+	margin-bottom:0px;
+	margin-top:-2px;
+	margin-right:15px;
+	/*Size*/
+	height:110%;
+	width:100px;
+	/*Styling*/
+	font-size:15px;
+}
+	.headerValue span {
+		position:absolute;
+		left: 23px;
+		top:5px;
+	}
+
+.headerText {
+	/*Border*/
+	border:2px solid black;
+	border-right: 3px solid black;
+	-moz-border-radius: 10px;
+	border-radius: 7px;
+	border-top-right-radius:0px;
+	border-bottom-right-radius: 15px;
+	/*Placement*/
+	position:relative;
+	display: inline-block;
+	/*Margin and Padding*/
+	margin-bottom:0px;
+	margin-top:-3px;
+	margin-left:-3px;
+	padding:0px;
+	/*Size*/
+	width:100px;
+	height:32px;
+	box-sizing:border-box;
+	/*Styling*/
+	text-align:center;
+	font-size:15px;
+	background:#cdc9c9;
+	border-color:#708090;
+	
+	/*margin-left:-1px;*/
+	/*border:1px solid black;*/
+	/*box-sizing:border-box;*/
+}
+
+	.headerText:hover {
+		background:#d3d3d3;
+		text-shadow:1px 1px #8b8989;
+	}
+	
+	.headerText span {
+		position:absolute;
+		left: 13px;
+		top:5px;
+	}
+
+		
+
+.selected .headerText{
+	background:#8b8989;
+	color:black;
+}
+
+.content {
+	/*Border*/
+	border:1px solid black;
+	border-top:none;
+	/*Placement*/
+	margin: 0 auto;
+	/*Margin and Padding*/
+	margin-bottom:4px;
+	/*Size*/
+	width:780px;
+	height:150px;
+	box-sizing:border-box;
+	/*Styling*/
+	background: white;
+}
+
+.content#attr1 {
+	opacity:1;
+	height:150px;
+	background:#98fb98;
+}
+	.content#attr1 div img{
+		position:absolute;	
+		height:130px;
+		margin:10px;
+		border-radius:5px;
+	}
+	
+	#attr1 .contentText div {
+		position:absolute;
+		height:108px;
+		width:590px;
+		margin:12px;
+		margin-left:150px;
+		border:3px inset black;
+		padding:7px;
+		padding-right:15px;
+		background:white;
+		border-radius:3px;
+		font-family: helvetica;
+		font-size:15px;
+		font-style:italic;
+		text-align:justify;
+	}
+
+.content#attr2 {
+	opacity:0;
+	height:0px;
+	background:#ffa07a;
+}
+
+	.content#attr2 div img{
+		position:absolute;	
+		height:130px;
+		margin:10px;
+		border-radius:5px;
+	}
+	
+	#attr2 .contentText div {
+		position:absolute;
+		height:108px;
+		width:520px;
+		margin:12px;
+		margin-left:220px;
+		border:3px inset black;
+		padding:7px;
+		padding-right:15px;
+		background:white;
+		border-radius:3px;
+		font-family: helvetica;
+		font-size:15px;
+		font-style:italic;
+		text-align:justify;
+	}
+
+.content#attr3 {
+	opacity:0;
+	height:0px;
+	
+	background: #a0522d; /* for non-css3 browsers */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafad2', endColorstr='#000000'); /* for IE */
+	background: -webkit-gradient(linear, left top, right top, from(#fafad2), to(#000)); /* for webkit browsers */
+	background: -moz-linear-gradient(left,  #fafad2,  #000); /* for firefox 3.6+ */ 
+}
+
+	.content#attr3 div img{
+		position:absolute;	
+		height:130px;
+		margin:10px;
+		border-radius:5px;
+	}
+	
+	#attr3 .contentText div {
+		position:absolute;
+		height:108px;
+		width:527px;
+		margin:12px;
+		margin-left:215px;
+		border:3px inset black;
+		padding:7px;
+		padding-right:15px;
+		background:white;
+		border-radius:3px;
+		font-family: helvetica;
+		font-size:15px;
+		font-style:italic;
+		text-align:justify;
+	}
+
+.content#attr4 {
+	opacity:0;
+	height:0px;
+	background:#b0c4de;
+}
+
+	.content#attr4 div img{
+		position:absolute;	
+		height:130px;
+		margin:10px;
+		border-radius:5px;
+	}
+	
+	#attr4 .contentText div {
+		position:absolute;
+		height:108px;
+		width:545px;
+		margin:12px;
+		margin-left:195px;
+		border:3px inset black;
+		padding:7px;
+		padding-right:15px;
+		background:white;
+		border-radius:3px;
+		font-family: helvetica;
+		font-size:15px;
+		font-style:italic;
+		text-align:justify;
+	}
+
+.content#attr5 {
+	opacity:0;
+	height:0px;
+	background:#eee8aa;
+}
+
+	.content#attr5 div img{
+		position:absolute;	
+		height:130px;
+		margin:10px;
+		border-radius:5px;
+	}
+	
+	#attr5 .contentText div {
+		position:absolute;
+		height:108px;
+		width:537px;
+		margin:12px;
+		margin-left:205px;
+		border:3px inset black;
+		padding:7px;
+		padding-right:15px;
+		background:white;
+		border-radius:3px;
+		font-family: helvetica;
+		font-size:15px;
+		font-style:italic;
+		text-align:justify;
+	}
+
+
+
+/*.ui-slider .ui-slider-handle {
+  width: 1.2em;
+  height: 1.2em;
+}
+.ui-slider-horizontal .ui-slider-handle { 
+  top: -0.3em;
+  margin-left: -0.6em;
+}*/
+
+
+
+
+

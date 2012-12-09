@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Brew Selector</title>
+		<!--This links my CSS-->
+		<link rel="stylesheet" href="../static/brewSelectorStyle.css" type="text/css" />
+		<!--This links the jQuery library-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<!--This links the jQuery UI library-->
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+		<!--This links  my Javascript file - for some reason it has to go after the other two?-->
+		<script src="../static/brewSelectorScript.js"></script>
+		<!--THIS LINKS A CSS FILE USED FOR JQUERY ELEMENTS THAT MAKES THE SLIDERS WORK-->
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />	
+		<!--This links a custon jQuery css for the slider, I hope it works-->
+		<link rel="stylesheet" href="jquery-ui-1.8.23.custom.css" type="text/css" />
+	
+		<script src="../static/MosaicMaker/Script.js"></script>
+	</head>
+
+	<body> 
+		<!--A container for the whole thing-->
+		<div id='brewSelectorContainer'>
+			<!--A main header that does not move or dissapear-->
+			<div id='mainHeader'>
+				<h1><span>B</span>REW <span>S</span>ELECTOR</h1>
+			</div>
+			<!--Below is a header/content combination of divs for the first attribute-->
+			<div class='header selected' id='attr1'>
+					<div class='headerValue'><span>Sweeter</span></div>
+					<div class='headerSlider'></div>
+					<div class='headerText'><span>Bitterness</span></div>		
+			</div>
+			<div class='content' id='attr1'>
+					<div class='contentText'>
+						<img src="http://homebrewtees.com/images/add_more_hops.gif" />
+						<div>Bitterness Content</div>
+					</div>
+			</div>
+			<!--Below is a header/content combination of divs for the second attribute-->
+			<div class='header' id='attr2'>
+					<div class='headerValue'><span>Thinner</span></div>
+					<div class='headerSlider'></div>
+					<div class='headerText'><span>Mouth Feel</span></div>	
+			</div>
+			<div class='content' id='attr2'>
+					<div class='contentText'>
+						<img src="http://karmiclifevents.files.wordpress.com/2011/04/beer-bubbles.jpg" />
+						<div>Mouth Feel Content</div>
+					</div>
+			</div>
+			<!--Below is a header/content combination of divs for the third attribute-->
+			<div class='header' id='attr3'>
+					<div class='headerValue'><span>Lighter</span></div>
+					<div class='headerSlider'></div>
+					<div class='headerText'><span>Coloration</span></div>
+			</div>
+			<div class='content' id='attr3'>
+					<div class='contentText'>
+						<img src="https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcS3Mm-svcVxHA25L4-ibZ1kizF4nafB3bhb-4Wr4tOZxyxBEOanIA" />
+						<div>Coloration Content</div>
+					</div>
+			</div>
+			<!--Below is a header/content combination of divs for the fourth attribute-->
+			<div class='header' id='attr4'>
+					<div class='headerValue'><span>Weaker</span></div>
+					<div class='headerSlider'></div>
+					<div class='headerText'><span>Percent Alc</span></div>
+			</div>
+			<div class='content' id='attr4'>
+					<div class='contentText'>
+						<img src="http://www.celebridoodle.com/.a/6a00e5536b2ba988330120a612df8a970c-500wi" />
+						<div>Percent Alc Content</div>
+					</div>
+			</div>
+			<!--Below is a header/content combination of divs for the fifth attribute-->
+			<div class='header' id='attr5'>
+					<div class='headerValue'><span>Cheap</span></div>
+					<div class='headerSlider'></div>
+					<div class='headerText'><span>Cost</span></div>
+			</div>
+			<div class='content' id='attr5'>
+					<div class='contentText'>
+						<img src="http://www.trbimg.com/img-50359869/turbine/la-food-fyi-president-obama-give-up-the-beer-r-001/600" />
+						<div>Cost</div>
+					</div>
+			</div>
+			<!--Add more classifications below========================================-->
+		</div><!--This closes brew selector container-->
+
+	</body>
+</html>
